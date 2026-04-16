@@ -1,0 +1,32 @@
+:root {
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #111111;
+  --bg-card: rgba(255, 255, 255, 0.02);
+  --bg-card-border: rgba(255, 255, 255, 0.06);
+
+  --text-primary: #f0f0f0;
+  --text-secondary: #888888;
+  --text-muted: #666666;
+  --text-dim: #555555;
+
+  --accent-red: #ff6b6b;
+  --accent-gold: #ffd93d;
+  --accent-green: #6bcb77;
+
+  --accent-red-bg: rgba(255, 107, 107, 0.1);
+  --accent-red-border: rgba(255, 107, 107, 0.2);
+  --accent-gold-bg: rgba(255, 217, 61, 0.1);
+  --accent-gold-border: rgba(255, 217, 61, 0.2);
+  --accent-green-bg: rgba(107, 203, 119, 0.1);
+  --accent-green-border: rgba(107, 203, 119, 0.2);
+
+  --nav-blur: blur(12px);
+  --nav-bg: rgba(13, 13, 13, 0.5);
+  --nav-border: rgba(255, 255, 255, 0.05);
+
+  --font-primary: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', monospace;
+
+  --section-padding: 50px;
+  --nav-height: 60px;
+}
