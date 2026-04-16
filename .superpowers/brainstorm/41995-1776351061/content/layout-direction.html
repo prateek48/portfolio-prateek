@@ -1,0 +1,104 @@
+<h2>Which layout direction feels right?</h2>
+<p class="subtitle">These are rough wireframes showing how sections flow on the single page</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)" style="cursor:pointer;">
+    <div class="card-image" style="background:#0a0a0a;padding:20px;min-height:320px;font-family:monospace;color:#00ff88;">
+      <!-- Layout A: Full-screen hero + vertical sections -->
+      <div style="border:1px solid #00ff88;padding:12px;text-align:center;margin-bottom:12px;height:80px;display:flex;align-items:center;justify-content:center;">
+        <div>
+          <div style="font-size:18px;letter-spacing:2px;">PRATEEK AGRAWAL</div>
+          <div style="font-size:10px;opacity:0.6;margin-top:4px;">UI ENGINEER &bull; FRONT-END DEVELOPER</div>
+          <div style="font-size:9px;opacity:0.4;margin-top:2px;">&darr; scroll to explore</div>
+        </div>
+      </div>
+      <div style="border:1px dashed #00ff8855;padding:8px;margin-bottom:8px;font-size:10px;">
+        <span style="color:#00ff88;">&gt;</span> ABOUT ME <span style="opacity:0.4;">// full-width text reveal</span>
+      </div>
+      <div style="border:1px dashed #00ff8855;padding:8px;margin-bottom:8px;font-size:10px;">
+        <span style="color:#00ff88;">&gt;</span> SKILLS <span style="opacity:0.4;">// animated skill bars/cards</span>
+      </div>
+      <div style="border:1px dashed #00ff8855;padding:8px;margin-bottom:8px;font-size:10px;">
+        <span style="color:#00ff88;">&gt;</span> EXPERIENCE <span style="opacity:0.4;">// vertical timeline</span>
+      </div>
+      <div style="border:1px dashed #00ff8855;padding:8px;margin-bottom:8px;font-size:10px;">
+        <span style="color:#00ff88;">&gt;</span> PROJECTS <span style="opacity:0.4;">// project cards grid</span>
+      </div>
+      <div style="border:1px dashed #00ff8855;padding:8px;font-size:10px;">
+        <span style="color:#00ff88;">&gt;</span> CONTACT <span style="opacity:0.4;">// links + form</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A. Full-Screen Sections</h3>
+      <p>Each section takes the full viewport. Big cinematic feel. Scroll snapping between sections. Hero &rarr; About &rarr; Skills &rarr; Experience &rarr; Projects &rarr; Contact.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)" style="cursor:pointer;">
+    <div class="card-image" style="background:#0a0a0a;padding:20px;min-height:320px;font-family:monospace;color:#00ff88;">
+      <!-- Layout B: Hero + flowing content -->
+      <div style="border:1px solid #00ff88;padding:12px;text-align:center;margin-bottom:12px;height:80px;display:flex;align-items:center;justify-content:center;position:relative;">
+        <div>
+          <div style="font-size:18px;letter-spacing:2px;">PRATEEK AGRAWAL</div>
+          <div style="font-size:10px;opacity:0.6;margin-top:4px;">// particles floating in background</div>
+        </div>
+        <div style="position:absolute;top:8px;right:10px;font-size:9px;opacity:0.5;">NAV &bull; LINKS</div>
+      </div>
+      <div style="display:flex;gap:8px;margin-bottom:8px;">
+        <div style="flex:1;border:1px dashed #00ff8855;padding:8px;font-size:9px;">
+          About text flowing naturally...
+        </div>
+        <div style="flex:1;border:1px dashed #00ff8855;padding:8px;font-size:9px;">
+          Skills as floating tags
+        </div>
+      </div>
+      <div style="border:1px dashed #00ff8855;padding:8px;margin-bottom:8px;font-size:9px;">
+        Experience: horizontal scroll timeline &rarr;&rarr;&rarr;
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;">
+        <div style="border:1px dashed #00ff8855;padding:8px;font-size:9px;">Project 1</div>
+        <div style="border:1px dashed #00ff8855;padding:8px;font-size:9px;">Project 2</div>
+      </div>
+      <div style="border:1px dashed #00ff8855;padding:8px;font-size:9px;text-align:center;">
+        Contact &bull; Gmail &bull; LinkedIn &bull; GitHub
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B. Flowing Narrative</h3>
+      <p>Natural reading flow. Sections blend into each other. Mixed layouts (some full-width, some split). Feels like a story. Experience as a horizontal scroll carousel.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)" style="cursor:pointer;">
+    <div class="card-image" style="background:#0a0a0a;padding:20px;min-height:320px;font-family:monospace;color:#00ff88;">
+      <!-- Layout C: Terminal-inspired -->
+      <div style="background:#111;border:1px solid #333;border-radius:6px;overflow:hidden;">
+        <div style="background:#1a1a1a;padding:6px 10px;display:flex;gap:4px;border-bottom:1px solid #333;">
+          <div style="width:8px;height:8px;border-radius:50%;background:#ff5f57;"></div>
+          <div style="width:8px;height:8px;border-radius:50%;background:#ffbd2e;"></div>
+          <div style="width:8px;height:8px;border-radius:50%;background:#28ca41;"></div>
+          <span style="margin-left:8px;font-size:9px;opacity:0.5;">prateek@portfolio ~ %</span>
+        </div>
+        <div style="padding:12px;font-size:10px;line-height:1.8;">
+          <div><span style="color:#888;">$</span> whoami</div>
+          <div style="color:#00ff88;">Prateek Agrawal - UI Engineer</div>
+          <div style="margin-top:4px;"><span style="color:#888;">$</span> cat skills.json</div>
+          <div style="color:#ffbd2e;">{ React, Next.js, TypeScript... }</div>
+          <div style="margin-top:4px;"><span style="color:#888;">$</span> history --career</div>
+          <div style="color:#00ff88;">Flipkart &rarr; Airbus &rarr; Ascian</div>
+          <div style="margin-top:4px;"><span style="color:#888;">$</span> ls projects/</div>
+          <div style="color:#87ceeb;">drawing-tool/ crown-clothing/</div>
+          <div style="margin-top:4px;"><span style="color:#888;">$</span> contact --all</div>
+          <div style="color:#ff79c6;">gmail linkedin github</div>
+        </div>
+      </div>
+      <div style="margin-top:12px;font-size:9px;opacity:0.4;text-align:center;">
+        Content revealed through "typing" animations as you scroll
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C. Terminal / Code-Inspired</h3>
+      <p>The entire site looks like a terminal or code editor. Commands "execute" as you scroll to reveal content. Typing animations, blinking cursors, syntax highlighting. Maximum tech identity.</p>
+    </div>
+  </div>
+</div>
