@@ -46,7 +46,7 @@ export default function Hero() {
     };
   }, []);
 
-  const nameLetters = 'PRATEEK AGRAWAL'.split('');
+  const nameWords = ['PRATEEK', 'AGRAWAL'];
 
   const socialLinks = [
     { icon: <FiLinkedin />, href: 'https://www.linkedin.com/in/prateekagrawal1999/', label: 'LinkedIn' },
@@ -93,9 +93,13 @@ export default function Hero() {
         </motion.div>
 
         <div className={styles.name} ref={nameRef}>
-          {nameLetters.map((letter, i) => (
-            <span key={i} className={letter === ' ' ? styles.space : styles.letter}>
-              {letter}
+          {nameWords.map((word, wi) => (
+            <span key={wi} className={styles.word}>
+              {word.split('').map((letter, li) => (
+                <span key={`${wi}-${li}`} className={styles.letter}>
+                  {letter}
+                </span>
+              ))}
             </span>
           ))}
         </div>

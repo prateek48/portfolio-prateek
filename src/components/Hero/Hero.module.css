@@ -93,13 +93,19 @@
   margin-bottom: 4px;
 }
 
-.letter, .space {
+.word {
   display: inline-block;
-  opacity: 0;
+  white-space: nowrap;
+  margin-right: 0.3em;
 }
 
-.space {
-  width: 0.3em;
+.word:last-child {
+  margin-right: 0;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
 }
 
 .underline {

@@ -118,9 +118,9 @@ export default function Skills() {
                       key={skill}
                       className={styles.skillPill}
                       style={{
-                        '--pill-color': accent.color,
-                        '--pill-bg': accent.bg,
-                        '--pill-border': accent.border,
+                        color: accent.color,
+                        background: accent.bg,
+                        borderColor: accent.border,
                       }}
                     >
                       {skill}

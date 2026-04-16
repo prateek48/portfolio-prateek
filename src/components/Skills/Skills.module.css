@@ -105,16 +105,14 @@
   border-radius: 20px;
   font-size: 11px;
   letter-spacing: 0.5px;
-  background: var(--pill-bg);
-  border: 1px solid var(--pill-border);
-  color: var(--pill-color);
+  border: 1px solid;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: default;
 }
 
 .skillPill:hover {
   transform: scale(1.08);
-  box-shadow: 0 0 12px var(--pill-color);
+  box-shadow: 0 0 12px currentColor;
 }
 
 .orbit {
