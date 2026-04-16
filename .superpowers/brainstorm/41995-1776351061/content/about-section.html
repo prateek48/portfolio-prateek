@@ -1,0 +1,90 @@
+<h2>Section 2: About Me</h2>
+<p class="subtitle">Full-viewport section — who you are at a glance</p>
+
+<div class="mockup">
+  <div class="mockup-header">About Section — Full Viewport</div>
+  <div class="mockup-body" style="background:#0d0d0d;min-height:480px;position:relative;overflow:hidden;font-family:'Segoe UI',system-ui,sans-serif;padding:60px 50px;display:flex;align-items:center;">
+
+    <!-- Subtle background accent -->
+    <div style="position:absolute;top:10%;right:-5%;width:350px;height:350px;background:radial-gradient(circle,rgba(255,217,61,0.06) 0%,transparent 70%);border-radius:50%;filter:blur(50px);pointer-events:none;"></div>
+    <div style="position:absolute;bottom:5%;left:10%;width:250px;height:250px;background:radial-gradient(circle,rgba(255,107,107,0.05) 0%,transparent 70%);border-radius:50%;filter:blur(40px);pointer-events:none;"></div>
+
+    <div style="display:flex;gap:60px;align-items:center;width:100%;z-index:1;">
+      
+      <!-- Left: Photo / Avatar area -->
+      <div style="flex-shrink:0;">
+        <div style="width:220px;height:260px;border-radius:16px;background:linear-gradient(135deg,rgba(255,107,107,0.15),rgba(255,217,61,0.1));border:1px solid rgba(255,255,255,0.08);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;">
+          <!-- Decorative frame lines -->
+          <div style="position:absolute;top:-8px;left:-8px;width:40px;height:40px;border-top:2px solid #ff6b6b;border-left:2px solid #ff6b6b;border-radius:4px 0 0 0;"></div>
+          <div style="position:absolute;bottom:-8px;right:-8px;width:40px;height:40px;border-bottom:2px solid #6bcb77;border-right:2px solid #6bcb77;border-radius:0 0 4px 0;"></div>
+          <div style="text-align:center;color:#555;font-size:12px;letter-spacing:1px;">
+            YOUR<br>PHOTO<br><span style="font-size:9px;color:#666;">( or 3D avatar )</span>
+          </div>
+        </div>
+        <!-- Stats row under photo -->
+        <div style="display:flex;gap:12px;margin-top:16px;justify-content:center;">
+          <div style="text-align:center;">
+            <div style="font-size:22px;font-weight:700;color:#ff6b6b;">4+</div>
+            <div style="font-size:9px;color:#666;letter-spacing:1px;">YEARS</div>
+          </div>
+          <div style="width:1px;background:rgba(255,255,255,0.08);"></div>
+          <div style="text-align:center;">
+            <div style="font-size:22px;font-weight:700;color:#ffd93d;">10+</div>
+            <div style="font-size:9px;color:#666;letter-spacing:1px;">PROJECTS</div>
+          </div>
+          <div style="width:1px;background:rgba(255,255,255,0.08);"></div>
+          <div style="text-align:center;">
+            <div style="font-size:22px;font-weight:700;color:#6bcb77;">3</div>
+            <div style="font-size:9px;color:#666;letter-spacing:1px;">COMPANIES</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Text content -->
+      <div style="flex:1;">
+        <!-- Section label -->
+        <div style="font-size:10px;color:#ff6b6b;letter-spacing:3px;margin-bottom:8px;font-weight:500;">
+          01 &mdash; ABOUT ME
+        </div>
+        
+        <div style="font-size:28px;color:#f0f0f0;font-weight:700;letter-spacing:1px;margin-bottom:20px;line-height:1.3;">
+          Crafting pixels into<br>
+          <span style="background:linear-gradient(90deg,#ff6b6b,#ffd93d);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">meaningful experiences</span>
+        </div>
+
+        <div style="font-size:13px;color:#888;line-height:1.9;margin-bottom:24px;max-width:480px;">
+          I'm a UI Engineer at Flipkart, passionate about building performant, user-centric interfaces. From configuring coupon engines to optimizing Core Web Vitals, I focus on code quality and seamless user experiences.
+        </div>
+
+        <div style="font-size:13px;color:#888;line-height:1.9;margin-bottom:24px;max-width:480px;">
+          Previously at Airbus and Ascian Solution, I've shipped production React apps, tackled ETL pipelines, and built everything from G-sites to WhatsApp auth flows. I care about performance, accessibility, and clean architecture.
+        </div>
+
+        <!-- Quick info pills -->
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+          <div style="padding:6px 14px;background:rgba(255,107,107,0.1);border:1px solid rgba(255,107,107,0.2);border-radius:20px;font-size:11px;color:#ff6b6b;letter-spacing:0.5px;">
+            &#x1f4cd; Bangalore, India
+          </div>
+          <div style="padding:6px 14px;background:rgba(255,217,61,0.1);border:1px solid rgba(255,217,61,0.2);border-radius:20px;font-size:11px;color:#ffd93d;letter-spacing:0.5px;">
+            &#x1f393; B.Tech IT — JEC
+          </div>
+          <div style="padding:6px 14px;background:rgba(107,203,119,0.1);border:1px solid rgba(107,203,119,0.2);border-radius:20px;font-size:11px;color:#6bcb77;letter-spacing:0.5px;">
+            &#x2615; Competitive Coder
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:20px;">
+  <h3>Animations</h3>
+  <ul style="color:#ccc;font-size:14px;line-height:2;">
+    <li><span style="color:#ff6b6b;">&bull;</span> Photo frame slides in from the left with a slight rotation</li>
+    <li><span style="color:#ffd93d;">&bull;</span> Stat counters animate from 0 to final value (counting up effect)</li>
+    <li><span style="color:#6bcb77;">&bull;</span> Section label and heading reveal line-by-line with fade-up</li>
+    <li><span style="color:#ff6b6b;">&bull;</span> Paragraphs fade in with staggered delay</li>
+    <li><span style="color:#ffd93d;">&bull;</span> Info pills pop in one-by-one with spring bounce</li>
+    <li><span style="color:#6bcb77;">&bull;</span> Decorative corner lines on photo frame draw themselves in (SVG path animation)</li>
+  </ul>
+</div>
