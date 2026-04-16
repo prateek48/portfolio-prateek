@@ -1,0 +1,13 @@
+.sectionLabel {
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.gradientText {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
